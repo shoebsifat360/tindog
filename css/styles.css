@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#title {
+    background-color: #ff4c68;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    color: #fff;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* nav_bar */
+/* nav_bar */
+/* nav_bar */
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.container {
+    padding: 0 2%;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* download_button */
+/* download_button */
+/* download_button */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Title_img */
+/* Title_img */
+/* Title_img */
+.title-img {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+}
+
+@media (max-width:1028px) {
+    .title-img {
+        position: static;
+        transform: rotate(0deg);
+    }
+
+    #title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    #contact .container {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+}
+
+/* features_secton */
+/* features_secton */
+/* features_secton */
+/* features_secton */
+#features {
+    padding: 7% 0;
+    z-index: 1;
+    background: #fff;
+    position: relative;
+}
+
+#features .features-box {
+    text-align: center;
+    padding: 5%;
+}
+
+#features .features-box p {
+    color: #8f8f8f;
+}
+
+.fi {
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.fi:hover {
+    color: #ff4c68;
+    transition: 0.5s;
+}
+
+/* Testmonial_section */
+/* Testmonial_section */
+/* Testmonial_section */
+#testimonials {
+    text-align: center;
+    background: #ef8172;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+#testimonials .container {
+    padding: 7% 8%;
+}
+
+#testimonials .container h2 {
+    animation: big;
+    animation-duration: 1s;
+}
+
+@keyframes big {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#testimonials .container img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+    animation: come 1s;
+}
+
+@keyframes come {
+
+    0% {
+        transform: translateX(-800px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#testimonials .container em {
+    animation-name: rot;
+    animation-duration: 2s;
+    transform: scale(2);
+    transform-origin: left center;
+    display: inline-block;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    /* 50%{transform: rotate(180deg);} */
+    100% {
+        transform: scale(2);
+        transform-origin: left center;
+    }
+
+}
+#testimonials-carousel .carousel-indicators button {
+    border: 1px solid #000;
+    border-radius: 100%;
+    height: 20px !important;
+    width: 20px !important;
+}
+
+#testimonials-carousel .carousel-indicators .indi1 {
+    background-image: url(../images/dog-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#testimonials-carousel .carousel-indicators .indi2 {
+    background-image: url(../images/lady-img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* press_section */
+/* press_section */
+/* press_section */
+#press {
+    background: #ef8172;
+    padding-bottom: 3%;
+}
+
+#press .container {}
+
+#press .container img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/* price_section/ */
+/* price_section/ */
+/* price_section/ */
+.price-btn {
+    background: #ff4c68;
+    outline: #ff4c68;
+    border: none;
+}
+
+.price-btn:hover {
+    background: #ef8172;
+    outline: #ef8172;
+    border: none;
+}
+/* call to action section */
+/* call to action section */
+/* call to action section */
+#cta {
+    background: #ff4c68;
+    padding: 7% 0;
+}
+
+#cta h3 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+
+    font-weight: 900;
+}
+
+/* contact */
+/* contact */
+/* contact */
+#contact {}
+
+#contact .btn {
+    background: #ff4c68;
+    color: #fff;
+}
+
+#contact .container form input {
+    outline-color: #ff4c68;
+    border: 1px solid rgba(255, 76, 103, 0.497);
+    border-radius: 5px;
+}
+
+#contact .container form textarea {
+    outline-color: #ff4c68;
+    border: 1px solid rgba(255, 76, 103, 0.497);
+    border-radius: 5px;
+}
+
+/* footer */
+/* footer */
+/* footer */
+
+
+#footer {
+    background: rgba(255, 76, 103, 0.45);
+    padding: 7% 0;
+}
+
+#footer .container ul {
+    list-style: none;
+}
+
+#footer .container ul li i {
+    color: #ffb3be;
+    text-shadow: 0px 0px 7px black;
+}
+
+#footer .container ul li i:hover {
+    color: #ff4c68;
+    transition: 1s;
+    text-shadow: 0px 0px 7px #ff4c68;
+}
+/* top button */
+/* top button */
+/* top button */
+.top-btn{
+    color: #000;
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    z-index: 20;
+}
+.top-btn:hover{
+    color: aqua;
+}
